@@ -1,0 +1,30 @@
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-page {
+    height: 100vh;
+}
+
+.nav-item {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 5em;
+    margin-bottom: 7px;
+
+    &:hover {
+        margin-bottom: 1px;
+        border-bottom: 6px dotted #222;
+    }
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-left: 150px;
+    margin-bottom: 100px;
+    padding-top: 300px;
+}

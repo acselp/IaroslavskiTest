@@ -1,0 +1,34 @@
+.text-card {
+    font-size: 55px;
+    font-weight: bold;
+    color: #414141;
+    white-space: nowrap;
+    cursor: default;
+    transition: 0.2s all ease-in-out;
+    padding-left: 40px;
+}
+
+.text-card:hover {
+    color: #FFC123;
+    transform: translateX(30px);
+}
+
+.text-card:hover::before {
+    position: absolute;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23.123' height='18.979' viewBox='0 0 23.123 18.979'%3E%3Cg transform='translate(0 0.867)'%3E%3Cg transform='translate(-4.5 17.246) rotate(-90)'%3E%3Cpath d='M32.246,9l-8.623,6.1L15,9' transform='translate(-15 10.682)' fill='none' stroke='%23ffc132' strokeMiterlimit='10' strokeWidth='3'/%3E%3Cline y1='21.53' transform='translate(8.446 4.5)' fill='none' stroke='%23ffc132' strokeMiterlimit='10' strokeWidth='3'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    display: block;
+    // vertical-align: 15%;
+    left: 0px;
+    top: -10px;
+}
+
+
+
+.text-card-icon {
+    visibility: hidden;
+    transition: 0.2s all ease-in-out;
+} 
+
+.text-card-container:hover + .text-card-icon {
+    visibility: visible !important;
+}
