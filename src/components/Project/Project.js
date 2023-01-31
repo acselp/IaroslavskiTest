@@ -25,7 +25,7 @@ function Project(props) {
     }, [props.reverseContent]);
 
     return(
-        <div class="project-container aos-init aos-animate" data-aos="fade-up" data-aos-duration="500" style={styles.container}>
+        <div className="project-container aos-init aos-animate" data-aos="fade-up" data-aos-duration="500" style={styles.container}>
 
             <div className="project-left" style={styles.left}>
                 <div className="project-title">
