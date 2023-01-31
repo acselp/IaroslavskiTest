@@ -5,13 +5,30 @@ import HomeParallaxImage from "../../img/paralax_bg.png";
 import Footer from "../../components/Footer/Footer";
 import Project from "../../components/Project/Project";
 import LoanImage from "../../img/Portfolio/loan_financing.jpg";
+import { useState, useEffect } from "react";
 
 
 function Portfolio() {
 
+
+    let [navBarColorMode, setNavBarColorMode] = useState("light");
+
+    const listenScrollEvent = e => {
+        if (window.scrollY > 6300) {
+            setNavBarColorMode("light");
+        } else {
+            setNavBarColorMode("dark");
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', listenScrollEvent)
+    }, []);
+
+
     return (
         <div className="portfolio-page">
-            <Navbar />
+            <Navbar menuColor={navBarColorMode}/>
 
             <div className="home-parallax-bg" style={{ backgroundColor: COLORS.parallaxBgColor }}>
                 <img src={HomeParallaxImage} alt="" />

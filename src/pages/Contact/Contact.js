@@ -2,13 +2,19 @@ import "./Contact.scss";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import { COLORS } from "../../values/colors";
-
+import { useState, useEffect } from "react";
 
 function Contact() {
 
+    let [menuColorMode, setMenuColorMode] = useState("dark");
+
+    useEffect(() => {
+        setMenuColorMode("ligth");
+    }, []);
+
     return (
         <div className="portfolio-page">
-            <Navbar />  
+            <Navbar menuColor={menuColorMode}/>  
 
             <div className="contact-bottom-section">
                 <div className="home-contact-info" style={{ backgroundColor: COLORS.mainThemeColor }}>
@@ -29,7 +35,7 @@ function Contact() {
                             Take digital ideas forward.
                         </div>
 
-                        <div class="home-contact aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
+                        <div class="contact-home-contact aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
                             <svg width="46" height="46" class="btn-arrow">
                                 <g data-name="Group 111" transform="translate(-143 -520)">
                                     <circle data-name="Ellipse 1" cx="23" cy="23" r="23" transform="translate(143 520)" fill="#3b3b3c">

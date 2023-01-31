@@ -2,5 +2,7 @@ export const COLORS = {
     mainThemeColor: '#FFC132',
     parallaxBgColor: '#222',
     fontColorOnMainThemeColor: "#343435",
-    fontColorOnParallax: "#fff"
+    fontColorOnParallax: "#fff",
+    navLightColor: "#fff",
+    navDarkColor: "#222",
 }

@@ -7,19 +7,43 @@ import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DataCard from "../../components/HomeDataCards/DataCard";
 import { COLORS } from "../../values/colors.js";
-import ArrowSvg from "../../components/ArrowSvg";
-
+import ArrowSvg from "../../components/SvgComponents/ArrowSvg";
+import { useState, useEffect } from "react";
 // Styles
 import "./Home.scss";
 
 
 function Home() {
 
+  let [navBarColorMode, setNavBarColorMode] = useState("dark");
 
+  const listenScrollEvent = e => {
+      if (window.scrollY < 770) {
+        setNavBarColorMode("light");
+      }
+
+      if (window.scrollY > 770) {
+          setNavBarColorMode("dark");
+      }
+      
+     
+
+      if (window.scrollY > 4450){
+        setNavBarColorMode("light");
+      }
+  }
+
+  useEffect(() => {
+    setNavBarColorMode("light");
+  }, []);
+
+  useEffect(() => {
+      window.addEventListener('scroll', listenScrollEvent)
+  }, []);
 
   return (
     <div className="home-page">
-      <Navbar />
+      <Navbar menuColor={navBarColorMode}/>
 
         <div className="home-parallax-bg" style={{backgroundColor: COLORS.parallaxBgColor}}>
           <img src={HomeParallaxImage} alt="" />

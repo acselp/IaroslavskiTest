@@ -4,13 +4,37 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import DigitalIdeasImage from "../../img/digital_ideas.png";
 import { COLORS } from "../../values/colors"; 
-
+import { useState, useEffect } from "react";
 
 function About() {
 
+    let [navBarColorMode, setNavBarColorMode] = useState("light");
+
+    const listenScrollEvent = e => {
+        if (window.scrollY < 850) {
+          setNavBarColorMode("dark");
+        }
+
+        if (window.scrollY > 850) {
+            setNavBarColorMode("light");
+        }
+        
+        if (window.scrollY > 1750){
+            setNavBarColorMode("dark");
+        }
+
+        if (window.scrollY > 2850){
+          setNavBarColorMode("light");
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', listenScrollEvent)
+    }, []);
+
     return (
         <div className="about-page">
-            <Navbar />
+            <Navbar menuColor={navBarColorMode}/>
 
             <div className="about-parallax-bg">
                 <img src={AboutParallaxImage} alt="" />
