@@ -9,6 +9,7 @@ import DataCard from "../../components/HomeDataCards/DataCard";
 import { COLORS } from "../../values/colors.js";
 import ArrowSvg from "../../components/SvgComponents/ArrowSvg";
 import { useState, useEffect } from "react";
+import Slider from "../../components/Slider/Slider";
 // Styles
 import "./Home.scss";
 
@@ -75,6 +76,10 @@ function Home() {
             <DataCard title="TECHNOLOGIES WE USE" items={["Azure", "AWS", ".NETCore", "SQLServer", "Node", "Angular", "React", "iOSSwift", "AndroidKotlin"]} text="We trust in excellent user experience. We shape the users’ journey accordingly to his needs by adding the perfect amount of visual." />
             <DataCard title="WE ARE WIZARDS OF" items={["UX/UI", "Web Apps", "IOS/Android", "API Development"]} text="We trust in excellent user experience. We shape the users’ journey accordingly to his needs by adding the perfect amount of visual." />
           </div>
+        </div>
+
+        <div className="slider-container">
+          <Slider />
         </div>
 
         <div className="home-bottom-section">

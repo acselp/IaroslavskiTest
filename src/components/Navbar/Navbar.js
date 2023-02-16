@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { COLORS } from '../../values/colors.js';
 import "./Navbar.scss";
-import Logo from '../SvgComponents/Logo.js';
+// import LogoImage from "../../img/logo.svg";
 
 function Navbar(props) {
 
@@ -42,7 +42,7 @@ function Navbar(props) {
             <Flex marginTop={"40px"} marginLeft={"40px"}>
                 <Link to="/" style={styles.logo} >
                     <Text fontWeight={"700"} fontSize="30px">
-                        Logo
+                        <img src={require("../../img/logo.png")} alt="" />
                     </Text>
                 </Link>
             </Flex>
