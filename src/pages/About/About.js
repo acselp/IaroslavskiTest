@@ -2,7 +2,7 @@ import "./About.scss";
 import AboutParallaxImage from "../../img/about_parallax.png";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import AboutImage from "../../img/about.png";
+import DigitalIdeasImage from "../../img/digital_ideas.png";
 import { COLORS } from "../../values/colors"; 
 import { useState, useEffect } from "react";
 
@@ -47,16 +47,16 @@ function About() {
                 <div className="about-digital-ideas" style={{backgroundColor: COLORS.mainThemeColor}}>
                     <div className="about-ideas-left">
                         <div class="ideas-header aos-init aos-animate" data-aos="fade-up" data-aos-duration="500" style={{color: COLORS.fontColorOnMainThemeColor}}>
-                          About us
+                            Take digital ideas forward.
                         </div>
 
                         <div class="ideas-text aos-init aos-animate" data-aos="fade-up" data-aos-duration="500" style={{color: COLORS.fontColorOnMainThemeColor}}>
-                        Our major company activity is overland international cargo in the European Union and CIS countries. The company also provides forwarding services. B&B Logistics is your reliable partner.The strategic objective of B&B Logistics is building trustful relationships with partners. 
+                            We are not just an ordinary development company, we are your result driven team of developers who can help you build a product from zero to hero and everything in between.
                         </div>
                     </div>
 
                     <div className="about-ideas-left">
-                        <img src={AboutImage} alt="" />
+                        <img src={DigitalIdeasImage} alt="" />
                     </div>
                 </div>
 

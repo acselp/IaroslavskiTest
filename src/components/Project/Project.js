@@ -11,7 +11,7 @@ function Project(props) {
         if(props.reverseContent) {
             setStyles({
                 container: {"flex-direction": "row-reverse"},
-                left: {"transform": "translateX(-20%)"},
+                left: {"transform": "translateX(-10%)"},
                 right: {"transform": "translateX(6%)"}
             });
         }
@@ -32,7 +32,7 @@ function Project(props) {
                     {props.header}
                 </div>
                 <div className="project-title-little">
-                    {props.header}
+                    {props.text}
                 </div>
             </div>
 

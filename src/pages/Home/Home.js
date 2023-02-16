@@ -10,11 +10,36 @@ import { COLORS } from "../../values/colors.js";
 import ArrowSvg from "../../components/SvgComponents/ArrowSvg";
 import { useState, useEffect } from "react";
 import Slider from "../../components/Slider/Slider";
+import Project from "../../components/Project/Project";
 // Styles
 import "./Home.scss";
 
 
 function Home() {
+
+  let [services, setServices] = useState(
+    [
+      {
+        title: "Transportation and forwarding services",
+        text: "B&B Logistics covers most of the European markets, offering its customers a full range of logistics services through its partnerships",
+        image: "frf.png"
+      },
+      {
+        title: "Services and solutions",
+        text: "B&B Logistics offers transport solutions and supplies both for recipients and for transport companies thanks to collaboration with our partners.",
+        image: "fs.jpg"
+      },
+      {
+        title: "Supply chain",
+        text: "Each organisation has its own unique features and challenges. No matter how complex your organization may be, B&B Logistics finds the optimal solution for you.",
+        image: "sc.png"
+      }
+    ]
+  );
+  let [reverseContent, setReverseContent] = useState(true);
+
+
+
 
   let [navBarColorMode, setNavBarColorMode] = useState("dark");
 
@@ -69,18 +94,33 @@ function Home() {
            </div>
         </div>
 
-        <div className="home-data-cards-container">
-          <div>
-            <DataCard title="WE ARE WIZARDS OF" items={["UX/UI", "Web Apps", "IOS/Android", "API Development"]} text="We trust in excellent user experience. We shape the users’ journey accordingly to his needs by adding the perfect amount of visual." />
+        <div className="projects">
+            {/* <DataCard title="WE ARE WIZARDS OF" items={["UX/UI", "Web Apps", "IOS/Android", "API Development"]} text="We trust in excellent user experience. We shape the users’ journey accordingly to his needs by adding the perfect amount of visual." />
             <DataCard title="WE CAN ASSIST FURTHER" items={["Automated Testing", "DevOps & Delivery", "Technical support"]} text="We trust in excellent user experience. We shape the users’ journey accordingly to his needs by adding the perfect amount of visual." />
             <DataCard title="TECHNOLOGIES WE USE" items={["Azure", "AWS", ".NETCore", "SQLServer", "Node", "Angular", "React", "iOSSwift", "AndroidKotlin"]} text="We trust in excellent user experience. We shape the users’ journey accordingly to his needs by adding the perfect amount of visual." />
-            <DataCard title="WE ARE WIZARDS OF" items={["UX/UI", "Web Apps", "IOS/Android", "API Development"]} text="We trust in excellent user experience. We shape the users’ journey accordingly to his needs by adding the perfect amount of visual." />
-          </div>
+            <DataCard title="WE ARE WIZARDS OF" items={["UX/UI", "Web Apps", "IOS/Android", "API Development"]} text="We trust in excellent user experience. We shape the users’ journey accordingly to his needs by adding the perfect amount of visual." /> */}
+
+            {services.map((item, index) => {
+
+                return(
+                  <Project 
+                    header={item.title}
+                    text= {item.text}
+                    image={require("../../img/" + item.image)}
+                    reverseContent={index % 2}
+                  />
+                );
+            
+            })}
+
+
+
+
         </div>
 
-        <div className="slider-container">
+        {/* <div className="slider-container">
           <Slider />
-        </div>
+        </div> */}
 
         <div className="home-bottom-section">
           <div className="home-contact-info" style={{backgroundColor: COLORS.mainThemeColor}}>
