@@ -11,6 +11,7 @@ import ArrowSvg from "../../components/SvgComponents/ArrowSvg";
 import { useState, useEffect } from "react";
 import Slider from "../../components/Slider/Slider";
 import CustomCarousel from "../../components/CustomCarousel/CustomCarousel";
+import { Slide } from "@chakra-ui/react";
 // Styles
 import "./Home.scss";
 
