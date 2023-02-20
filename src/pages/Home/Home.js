@@ -69,14 +69,14 @@ function Home() {
            </div>
         </div>
 
-        <div className="home-data-cards-container">
+        {/* <div className="home-data-cards-container">
           <div>
             <DataCard title="WE ARE WIZARDS OF" items={["UX/UI", "Web Apps", "IOS/Android", "API Development"]} text="We trust in excellent user experience. We shape the users’ journey accordingly to his needs by adding the perfect amount of visual." />
             <DataCard title="WE CAN ASSIST FURTHER" items={["Automated Testing", "DevOps & Delivery", "Technical support"]} text="We trust in excellent user experience. We shape the users’ journey accordingly to his needs by adding the perfect amount of visual." />
             <DataCard title="TECHNOLOGIES WE USE" items={["Azure", "AWS", ".NETCore", "SQLServer", "Node", "Angular", "React", "iOSSwift", "AndroidKotlin"]} text="We trust in excellent user experience. We shape the users’ journey accordingly to his needs by adding the perfect amount of visual." />
             <DataCard title="WE ARE WIZARDS OF" items={["UX/UI", "Web Apps", "IOS/Android", "API Development"]} text="We trust in excellent user experience. We shape the users’ journey accordingly to his needs by adding the perfect amount of visual." />
           </div>
-        </div>
+        </div> */}
 
         <div className="slider-container">
           <Slider />
