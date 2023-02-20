@@ -4,11 +4,13 @@ function Footer() {
 
     return (
         <div className="footer aos-init aos-animate" data-aos="fade" data-aos-duration="500">
-            <div className="footer-left">
-                31-33 Gheorghe Doja Street<br/> CLUJ-NAPOCA
-            </div>
             <div className="footer-right">
-                TechQuarter Software LTD<br/> 14 Ark Court, 54A Alkham Road, N16 6XF, London 
+                <b>B&B LOGISTICS, SRL<br/> </b>str. Zelinski 7, of. 210 <br/> CHISINAU <br/>MD-2015 R. of Moldova 
+            </div>
+           
+            
+            <div className="footer-right">
+                +373 62 111603<br/> +373 62 111609<br/>+373 22 660200
             </div>
         </div>
     );
