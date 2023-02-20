@@ -10,6 +10,7 @@ import { COLORS } from "../../values/colors.js";
 import ArrowSvg from "../../components/SvgComponents/ArrowSvg";
 import { useState, useEffect } from "react";
 import Slider from "../../components/Slider/Slider";
+import CustomCarousel from "../../components/CustomCarousel/CustomCarousel";
 // Styles
 import "./Home.scss";
 
@@ -79,7 +80,7 @@ function Home() {
         </div> */}
 
         <div className="slider-container">
-          <Slider />
+          <CustomCarousel />
         </div>
 
         <div className="home-bottom-section">
