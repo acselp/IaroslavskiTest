@@ -80,7 +80,23 @@ function Home() {
         </div> */}
 
         <div className="slider-container">
-          <CustomCarousel />
+        <CustomCarousel>
+            <div>
+              <Slide header="Loan Financing" text="Loan Financing" image={LoanImage} reverseContent={false} />
+            </div>
+            <div>
+              <Slide header="Loan Finszdfancing" text="Loan Financing" image={LoanImage} reverseContent={false} />
+            </div>
+            <div>
+              <Slide header="Loan Financing" text="Loan Financing" image={LoanImage} reverseContent={false} />
+            </div>
+            <div>
+              <Slide header="Loan Finasdfancing" text="Loan Financing" image={LoanImage} reverseContent={false} />
+            </div>
+            <div>
+              <Slide header="Loan Finfancing" text="Loan Financing" image={LoanImage} reverseContent={false} />
+            </div>
+          </CustomCarousel>
         </div>
 
         <div className="home-bottom-section">
