@@ -41,27 +41,30 @@ function Order() {
     }
 
     return (
-        <Flex flexDirection={"column"}>
+        <Flex flexDirection={"column"} width="100%">
 
             <Navbar menuColor={menuColorMode} />
 
             <div className="contact-parallax-bg" style={{ backgroundColor: COLORS.parallaxBgColor }}>
                 <img src={ContactParallaxImage} alt="" />
             </div>
-            <Container
-            zIndex="9999"
+            <Flex
+                width={"100%"}
+                zIndex="1"
                 paddingTop={"5%"}
-                paddingBottom="10%"    
+                paddingBottom="10%"  
+                justifyContent={"center"}
             >
-
+                
             <Box
+                width="50%"
                 bgColor={"#343435"}
                 rounded={'lg'}
                 bg={useColorModeValue('#343435', 'white')}
                 boxShadow={'lg'}
                 p={8}>
                 <Stack 
-                    spacing={4}
+                    spacing={5}
                     
                 >
                     <FormControl id="email">
@@ -236,7 +239,7 @@ function Order() {
                     </Stack>
                 </Stack>
             </Box>
-            </Container>
+            </Flex>
 
 
             <div className="contact-bottom-section">

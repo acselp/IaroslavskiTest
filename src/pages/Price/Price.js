@@ -48,13 +48,16 @@ function Price() {
             <div className="contact-parallax-bg" style={{ backgroundColor: COLORS.parallaxBgColor }}>
                 <img src={ContactParallaxImage} alt="" />
             </div>
-            <Container
-            zIndex="9999"
+            <Flex
+                zIndex="1"
+                width={"100%"}
                 paddingTop={"5%"}
-                paddingBottom="10%"    
+                paddingBottom="10%"   
+                justifyContent={"center"} 
             >
 
             <Box
+                width={"50%"}
                 bgColor={"#343435"}
                 rounded={'lg'}
                 bg={useColorModeValue('#343435', 'white')}
@@ -146,7 +149,7 @@ function Price() {
                     </Stack>
                 </Stack>
             </Box>
-            </Container>
+            </Flex>
 
 
             <div className="contact-bottom-section">
