@@ -22,7 +22,8 @@ function Menu() {
             <div className="menu">
                 <div className="nav-items">
                     <Link to="/about" className="nav-item">About us</Link>
-                    <Link to="/portfolio" className="nav-item">Our work</Link>
+                    <Link to="/order" className="nav-item">Place Order</Link>
+                    <Link to="/price" className="nav-item">Price request</Link>
                     <Link to="/contact" className="nav-item">Contact</Link>
                 </div>
             </div>
