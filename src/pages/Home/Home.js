@@ -5,18 +5,36 @@ import Footer from "../../components/Footer/Footer";
 import HomeParallaxImage from "../../img/paralax_bg.png";
 import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import DataCard from "../../components/HomeDataCards/DataCard";
 import { COLORS } from "../../values/colors.js";
-import ArrowSvg from "../../components/SvgComponents/ArrowSvg";
+import ArrowSvg from "../../components/SvgComponents/PrevArrow";
 import { useState, useEffect } from "react";
-import Slider from "../../components/Slider/Slider";
 import CustomCarousel from "../../components/CustomCarousel/CustomCarousel";
-import { Slide } from "@chakra-ui/react";
+import Slide from "../../components/SliderSLides/Slide";
+import LoanImage from "../../img/Portfolio/loan_financing.jpg"
+
 // Styles
 import "./Home.scss";
 
 
 function Home() {
+
+  let [sliderData, setSliderData] = useState([
+    {
+      header: "Transportation and forwarding services",
+      text: "B&B Logistics covers most of the European markets, offering its customers a full range of logistics services through its partnerships",
+      image: "frf.webp"
+    },
+    {
+      header: "Services and solutions",
+      text: "B&B Logistics offers transport solutions and supplies both for recipients and for transport companies thanks to collaboration with our partners.",
+      image: "forwardingsolutions.webp"
+    },
+    {
+      header: "Supply chain",
+      text: "Each organisation has its own unique features and challenges. No matter how complex your organization may be, B&B Logistics finds the optimal solution for you.",
+      image: "Supply_chain.webp"
+    }
+  ])
 
   let [navBarColorMode, setNavBarColorMode] = useState("dark");
 
@@ -81,23 +99,11 @@ function Home() {
         </div> */}
 
         <div className="slider-container">
-        <CustomCarousel>
-            <div>
-              <Slide header="Loan Financing" text="Loan Financing" image={LoanImage} reverseContent={false} />
-            </div>
-            <div>
-              <Slide header="Loan Finszdfancing" text="Loan Financing" image={LoanImage} reverseContent={false} />
-            </div>
-            <div>
-              <Slide header="Loan Financing" text="Loan Financing" image={LoanImage} reverseContent={false} />
-            </div>
-            <div>
-              <Slide header="Loan Finasdfancing" text="Loan Financing" image={LoanImage} reverseContent={false} />
-            </div>
-            <div>
-              <Slide header="Loan Finfancing" text="Loan Financing" image={LoanImage} reverseContent={false} />
-            </div>
+
+          <CustomCarousel nrSlides={sliderData.length}>
+            {sliderData.map((item, index) => {return (<div><Slide header={item.header} text={item.text} image={require("../../img/" + item.image)} /></div>)})}
           </CustomCarousel>
+
         </div>
 
         <div className="home-bottom-section">

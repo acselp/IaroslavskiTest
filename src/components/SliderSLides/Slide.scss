@@ -4,9 +4,9 @@
 }
 
 .slide-title {
-    font-size: 120px;
+    font-size: 60px;
     font-weight: bold;
-    line-height: 110px;
+    line-height: 1.2em;
     color: white;
 }
 
@@ -19,10 +19,11 @@
 }
 
 .slide-left {
-   width: 40%;
-   display: flex;
+    width: 40%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-right: 20px;
 }
 
 .slide-right {
@@ -32,7 +33,12 @@
     justify-content: center;
 
     & > img {
-        width: 100%;
+        width: 70%;
         height: auto;
     }
 }
+
+.center .slick-center .slide-container {
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+  }
