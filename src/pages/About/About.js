@@ -8,11 +8,16 @@ import { useState, useEffect } from "react";
 
 function About() {
 
-   
+   let [colorMode, setColorMode] = useState("dark");
+
+
+    useEffect(() => {
+      setColorMode("light");
+    }, [colorMode]);
 
     return (
         <div className="about-page">
-            <Navbar menuColor={"dark"}/>
+            <Navbar menuColor={colorMode}/>
 
             <div className="about-parallax-bg">
                 <img src={AboutParallaxImage} alt="" />
