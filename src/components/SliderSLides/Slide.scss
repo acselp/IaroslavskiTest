@@ -1,0 +1,44 @@
+.slide-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide-title {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.2em;
+    color: white;
+}
+
+.slide-title-little {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 5px;
+    font-weight: 300;
+    color: white;
+}
+
+.slide-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.slide-right {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > img {
+        width: 70%;
+        height: auto;
+    }
+}
+
+.center .slick-center .slide-container {
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+  }

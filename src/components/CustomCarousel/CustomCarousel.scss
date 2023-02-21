@@ -1,0 +1,49 @@
+.carousel {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    position: relative;
+}
+
+.slider {
+    width: 80%;
+}
+
+.prev-btn {
+    position: absolute;
+    z-index: 99;
+    top: 110%;
+    left: 15%;
+}
+
+
+.next-btn {
+    position: absolute;
+    z-index: 99;
+    top: 110%;
+    right: 15%;
+}
+
+.slider-line-bg {
+    width: 53%;
+    height: 3px;
+    background-color: #404040;
+    position: absolute;
+    top: calc(110% + 8px);
+}
+
+
+.slider-line-container {
+    width: 100%;
+    position: relative;
+}
+
+.slider-line-inside {
+    position: absolute;
+    height: 3px;
+    background-color: #fff;
+    transition: all 1s ease-in-out;
+}
+
