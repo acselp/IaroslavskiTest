@@ -122,7 +122,7 @@ function Home() {
 
             <div className="home-contact-info-left">
               <div class="header-main-theme-6-em" data-aos="fade-up" data-aos-duration="500">
-                Take digital ideas forward.
+                We create opportunities.
               </div>
               
               <div class="home-contact aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
@@ -142,7 +142,7 @@ function Home() {
                 </svg>
 
                 <span class="email-text">
-                  hello@techquarter.io
+                  info@bnb.md
                 </span>
               </div>
             </div>
