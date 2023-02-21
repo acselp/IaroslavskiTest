@@ -10,7 +10,8 @@ import Contact from "./pages/Contact/Contact";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
-
+import { ChakraBaseProvider } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
 
@@ -19,17 +20,19 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/menu" element={<Menu />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/portfolio" element={<Portfolio />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
+    <ChakraProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/menu" element={<Menu />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/portfolio" element={<Portfolio />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
 
 
-      </Routes>
-    </BrowserRouter>
+        </Routes>
+      </BrowserRouter>
+    </ChakraProvider>
   );
 }
 

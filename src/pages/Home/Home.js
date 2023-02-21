@@ -6,7 +6,7 @@ import HomeParallaxImage from "../../img/paralax_bg.png";
 import { faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { COLORS } from "../../values/colors.js";
-import ArrowSvg from "../../components/SvgComponents/PrevArrow";
+import ArrowSvg from "../../components/SvgComponents/ArrowSvg";
 import { useState, useEffect } from "react";
 import CustomCarousel from "../../components/CustomCarousel/CustomCarousel";
 import Slide from "../../components/SliderSLides/Slide";
