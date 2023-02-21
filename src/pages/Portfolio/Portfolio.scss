@@ -1,9 +1,11 @@
 
-.home-page {
+.portfolio-page {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
+
+// Default styles--------------------------------------------------------------
 
 .home-parallax-bg {
     width: 100%;
@@ -17,62 +19,6 @@
         margin-top: 270px;
         width: 1900px;
         height: 450px;
-    }
-}
-
-
-.header-main-theme-7-5-em {
-    font-size: 7.5em;
-    font-weight: 700;
-    line-height: 144px;
-}
-
-.header-main-theme-6-em {
-    font-size: 6em;
-    font-weight: 700;
-    line-height: 144px;
-}
-
-.home-top-section {
-    width: 100%;
-    height: 840px; 
-    display: flex;
-    justify-content: start; 
-
-    z-index: 1;
-    flex-direction: column;
-    padding-left: 260px;
-    padding-top: 150px;
-
-    & > span {
-        margin-top: 50px; 
-        font-size: 1.3em;
-    }
-}
-
-
-.home-about {
-    display: flex;
-    margin-top: 60px;
-    align-items: center;
-
-    & > span {
-        margin-left: 20px; 
-        font-size: 25px; 
-        font-weight: 700;
-    }
-}
-
-
-.home-data-cards-container {
-    width: 100%; 
-    z-index: 1;
-
-    & > div {
-        display: flex;
-        margin-left: 50%; 
-        flex-direction: column; 
-        gap: 300px;
     }
 }
 
@@ -125,9 +71,12 @@
     }
 }
 
+// -----------------------------------------------------------------
 
-.slider-container {
-    z-index: 999;
-    margin-bottom: 200px;
+.projects {
+    z-index: 1;
+    width: 100%;
+    display: grid;
+    row-gap: 300px;
     margin-top: 200px;
 }

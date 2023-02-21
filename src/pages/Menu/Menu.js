@@ -3,14 +3,21 @@ import Navbar from "../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import { COLORS } from "../../values/colors";
+import { useEffect, useState } from "react";
 
 function Menu() {
+
+    let [menuColorMode, setMenuColorMode] = useState("dark");
+
+    useEffect(() => {
+        setMenuColorMode("ligth");
+    }, []);
 
     return (
         <div className="menu-page" style={{
             backgroundColor: COLORS.mainThemeColor,
         }}>
-            <Navbar />
+            <Navbar menuColor={menuColorMode}/>
 
             <div className="menu">
                 <div className="nav-items">

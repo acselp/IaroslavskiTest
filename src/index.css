@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
 * {
-    color: #343435;
     font-family: 'Barlow', sans-serif;
+}
+
+span, h1, h2, h3, h4, h5, div {
+    color: #343435;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+line-height: 1.5;
 }

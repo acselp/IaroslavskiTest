@@ -13,4 +13,24 @@
         padding-top: 20px;
         width: fit-content;
     }
+
+    & img {
+        width: 100px;
+    }
 }
+
+.linkedin img, .xing img {
+    width: 100%;
+}
+
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    // margin-top: 20px;
+}
+
+// .connect {
+//     margin-bottom: -10px;
+// }
