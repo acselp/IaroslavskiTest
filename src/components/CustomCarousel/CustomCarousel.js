@@ -18,17 +18,21 @@ function CustomCarousel(props) {
 
     const settings = {
         infinite: true,
-        speed: 500,
+        speed: 700,
         slidesToShow: 0.97,
         slidesToScroll: 1,
         class: "center",
         centerMode: true,
-        arrows: false
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        cssEase: "ease-in-out",
     };
 
 
     function prev() {
         arrowRef.current.slickPrev();
+
 
         if(sliderPosition > 0) {
             setSliderPosition(sliderPosition - (100 / props.nrSlides));
