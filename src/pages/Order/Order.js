@@ -50,7 +50,7 @@ function Order() {
             </div>
             <Container
             zIndex="9999"
-                paddingTop={"10%"}
+                paddingTop={"5%"}
                 paddingBottom="10%"    
             >
 
@@ -225,6 +225,7 @@ function Order() {
                     <Stack spacing={10}>
                         
                         <Button
+                            marginTop={"20px"}
                             bg={'blue.400'}
                             color={'white'}
                             _hover={{
