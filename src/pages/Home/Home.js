@@ -72,20 +72,22 @@ function Home() {
       
 
         <div className="home-top-section" style={{backgroundColor: COLORS.mainThemeColor}}>
-          <h1 className="header-main-theme-7-5-em" align="left">
-            Take digital ideas<br/> forward.
-          </h1>
+          <div className="home-header-container">
+            <h1 className="header-main-theme-7-5-em" align="left">
+              Take digital ideas<br/> forward.
+            </h1>
 
-          <span align="left">
-            We are a digital development company, with a mission to build your product<br/> from zero to hero with everything in between.
-          </span>
+            <span align="left">
+              We are a digital development company, with a mission to build your product<br/> from zero to hero with everything in between.
+            </span>
 
-           <div className="home-about">
-              <Link to="/about">
-                {/* <FontAwesomeIcon icon={faCircleArrowRight} fontSize="50px" color="#343435"/> */}
-                <ArrowSvg />
-              </Link>
-              <span>About Us</span>
+            <div className="home-about">
+                <Link to="/about">
+                  {/* <FontAwesomeIcon icon={faCircleArrowRight} fontSize="50px" color="#343435"/> */}
+                  <ArrowSvg />
+                </Link>
+                <span>About Us</span>
+            </div>
            </div>
         </div>
 

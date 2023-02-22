@@ -19,7 +19,7 @@ function CustomCarousel(props) {
     const settings = {
         infinite: true,
         speed: 700,
-        slidesToShow: 0.97,
+        slidesToShow: .97,
         slidesToScroll: 1,
         class: "center",
         centerMode: true,
