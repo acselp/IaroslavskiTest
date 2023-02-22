@@ -73,8 +73,11 @@ function Contact() {
 
             <div className="contact-main-container">
             <Container bg="#9DC4FB" maxW="full" mt={0} centerContent overflow="hidden">
-                <Flex zIndex="999">
+                <Flex zIndex="1"
+                    marginTop={"130px"}
+                >
                     <Box
+                    
                         bg={"#343435"}
                         color="white"
                         borderRadius="lg"
@@ -83,12 +86,14 @@ function Contact() {
                         <Box p={4}>
                             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
                                 <WrapItem>
-                                    <Box>
+                                    <Box
+                                        
+                                    >
                                         <Heading color={"white"}>Contact</Heading>
                                         <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
                                             Fill up the form below to contact
                                         </Text>
-                                        <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
+                                        <Box className="order-form" py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                                             <Flex flexDir={"column"} alignItems="flex-start">
                                                 <Button
                                                     size="md"
