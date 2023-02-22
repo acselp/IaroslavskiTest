@@ -20,7 +20,8 @@ function About() {
             <Navbar menuColor={colorMode}/>
 
             <div className="about-parallax-bg">
-                <img src={AboutParallaxImage} alt="" />
+                <img src={AboutParallaxImage} alt="" repeat/>
+                {/* <img src={AboutParallaxImage} alt="" /> */}
             </div>
 
             <div className="about-container">
@@ -130,7 +131,7 @@ B&B LOGISTICS will provide the best price and most favorable terms and condition
                   </g>
                 </svg>
 
-                <span class="email-text">
+                <span className="email-text">
                   info@bnb.md
                 </span>
               </div>

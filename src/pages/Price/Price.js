@@ -57,7 +57,8 @@ function Price() {
             >
 
             <Box
-                width={"50%"}
+                // width={"50%"}
+                className="order-form"
                 bgColor={"#343435"}
                 rounded={'lg'}
                 bg={useColorModeValue('#343435', 'white')}

@@ -9,17 +9,18 @@ function Footer() {
 
     return (
         <div className="footer aos-init aos-animate" data-aos="fade" data-aos-duration="500">
-            <div className="footer-img">
-
-                <img src={FooterImg} alt="" />
+            
+            <div>
+                <div className="footer-img">
+                    <img src={FooterImg} alt="" />
                 </div>
-
                 <div>
                     <img src={qr} />
                 </div>
+            </div>
 
-                <div>
 
+            <div>
                 <p className="connect">
                     <b>
                         Connect
@@ -31,12 +32,14 @@ function Footer() {
                             <img src={XingLogo} alt="" />
                         </a>
                     </div>
+
                     <div className="linkedin">
                         <a href="https://www.linkedin.com/company/b&b-logistic">
                             <img src={LinkedinLogo} alt="" />
                         </a>
                     </div>
                 </div>
+
                 <p>
                     <b>
                         We create opportunities
