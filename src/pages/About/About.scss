@@ -224,7 +224,10 @@
 
 
 
-
+.order-form {
+    width: 50%;
+    margin-top: 130px;
+}
 
 
 
@@ -255,10 +258,7 @@
         font-size: 3em !important;
     }
 
-    // .footer {
-    //     display: grid;
-        
-    // }
+  
 }
 
 
@@ -304,6 +304,25 @@
         font-size: 2em !important;
     }
 
+    .contact-contact-info-left {
+        & > div:first-child {
+            line-height: 1.5em;
+        }
+    }
+
+    .contact-contact-info-left {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .contact-main-container > :first-child {
+        width: 80%;
+    }
+
+    .order-form {
+        width: 80% !important;
+    }
 
 }
 
@@ -330,6 +349,11 @@
         line-height: 1.5em;
         margin-top: 50px;
         text-align: center;
+    }
+
+    .order-form {
+        width: 95% !important;
+
     }
     
 }
