@@ -13,6 +13,8 @@ import {
     Text,
     Container,
     useColorModeValue,
+    FormErrorMessage,
+    FormHelperText
   } from '@chakra-ui/react';
 
   import Footer from "../../components/Footer/Footer";
@@ -27,6 +29,143 @@ import {
 function Order() {
 
     let [menuColorMode, setMenuColorMode] = useState("dark");
+    let [formData, setFormData] = useState({});
+
+    function handleDate(e) {
+        formData.date = e.target.value;
+    }
+
+    function handleConsigner(e) {
+        formData.consigner = e.target.value;
+    }
+
+    function handleLoadingAddress(e) {
+        formData.loadingAddress = e.target.value;
+    }
+
+    function handleExportCustms(e) {
+        formData.exportCustoms = e.target.value;
+    }
+
+    function handleContactOnLoading(e) {
+        formData.contactOnLoading = e.target.value;
+    }
+
+    function handleLoadingDateAndTime(e) {
+        formData.loadingDateAndTime = e.target.value;
+    }
+
+    function handleReferenceNumber(e) {
+        formData.referenceNumber = e.target.value;
+    }
+
+    function handleBorderCrossPoint(e) {
+        formData.borderCrossPoint = e.target.value;
+    }
+
+    function handleConsignee(e) {
+        formData.consignee = e.target.value;
+    }
+
+    function handleUnloadingAddress(e) {
+        formData.unloadingAddress = e.target.value;
+    }
+
+    function handleImportCustoms(e) {
+        formData.importCustoms = e.target.value;
+    }
+
+    function handleContactOnUploading(e) {
+        formData.contactOnUploading = e.target.value;
+    }
+
+    function handleUploadingDateAndTime(e) {
+        formData.uploadingDateAndTime = e.target.value;
+    }
+
+    function handleLoadTypeAndCharacteristics(e) {
+        formData.loadTypeAndCharacteristics = e.target.value;
+    }
+
+    function handleLoadPackage(e) {
+        formData.loadPackage = e.target.value;
+    }
+
+    function handleLoadVolume_m3(e) {
+        formData.loadVolume_m3 = e.target.value;
+    }
+
+    function handleLoadVolume_ldm(e) {
+        formData.loadVolume_ldm = e.target.value;
+    }
+
+    function handleLoadWeight(e) {
+        formData.loadWeight = e.target.value;
+    }
+
+    function handleTemperatureOfTransportation(e) {
+        formData.loadWeight = e.target.value;
+    }
+
+    function handleSpecialTransportConditions(e) {
+        formData.specialTransportConditions = e.target.value;
+    }
+
+    function handleFreightValue(e) {
+        formData.freightValue = e.target.value;
+    }
+
+    function handleSpecialConditions(e) {
+        formData.specialConditions = e.target.value;
+    }
+
+    function handleCompanyName(e) {
+        formData.specialCompanyName = e.target.value;
+    }
+
+    function handleVATNumber(e) {
+        formData.VATNumber = e.target.value;
+    }
+
+    function handleLegalAddress(e) {
+        formData.legalAddress = e.target.value;
+    }
+
+    function handleContactPerson(e) {
+        formData.contactPerson = e.target.value;
+    }
+
+    function handleBank(e) {
+        formData.bank = e.target.value;
+    }
+
+    function handleSwift(e) {
+        formData.swift = e.target.value;
+    }
+
+    function handleIBAN(e) {
+        formData.IBAN = e.target.value;
+    }
+
+    function handleTelephone(e) {
+        formData.telephone = e.target.value;
+    }
+
+    function handleCell(e) {
+        formData.cell = e.target.value;
+    }
+
+    function handleFAX(e) {
+        formData.FAX = e.target.value;
+    }
+
+    function handleEmail(e) {
+        formData.email = e.target.value;
+    }
+
+
+
+
 
     useEffect(() => {
         setMenuColorMode("dark");
@@ -79,11 +218,13 @@ function Order() {
 
                     <FormControl id="email">
                         <FormLabel color="white"><b>Consigner info</b></FormLabel>
-                        <Input color="white" type="text" placeholder="Consigner *"   _placeholder={{color: "#ffff"}}/>
+                        <Input color="white" type="email" onChange={handleDate} placeholder="Consigner *"   _placeholder={{color: "#ffff"}}/>
                     </FormControl>
 
                     <FormControl id="email">
                         <Input color="white" type="text" placeholder="Loading address *"   _placeholder={{color: "#ffff"}}/>
+                        <FormErrorMessage>Email is required.</FormErrorMessage>
+
                     </FormControl>
 
                     <FormControl id="email">
@@ -135,13 +276,8 @@ function Order() {
 
 
 
-
                     <FormControl id="email">
                         <FormLabel color="white"><b>Load info</b></FormLabel>
-                        <Input color="white" type="text" placeholder="Consignee *"   _placeholder={{color: "#ffff"}}/>
-                    </FormControl>
-
-                    <FormControl id="email">
                         <Input color="white" type="text" placeholder="Load type and characteristics *"   _placeholder={{color: "#ffff"}}/>
                     </FormControl>
 
